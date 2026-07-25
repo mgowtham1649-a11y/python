@@ -1,0 +1,23 @@
+print("welcome to tressure island.")
+print("you are mission is find a tressure.")
+choice1=input('you\'re in a crossed road,where will you go?'
+              'type"left" or "right".\n').lower()
+if choice1=="left":
+    choice2=input('you\'re come to the lake.'
+                  'there is an middle of an iseland'
+                  'type"wait" to wait for the boat'
+                  'type"swim" to swim the lake.\n').lower()
+    if choice2=="wait":
+        choice3=input('you\'re entered island unharmed'
+                  'there in three dores one is"one red"'
+                  '"one blue" and "one yellow"\n').lower()
+        if choice3 == "one red":
+            print("its a room is full fired.game over")
+        elif choice3 == "one blue":
+            print("you entered room is fully snake.game over")
+        elif choice3 == ("one red"):
+            print("you find a tressure.you win")
+        else:
+            print("you entered room is does't exit.game over")
+else:
+    print("you chose wrong direction so.game over")
