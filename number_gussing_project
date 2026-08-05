@@ -1,0 +1,29 @@
+import random
+easy_level=10
+hard_level=5
+number=random.randint(1,100)
+def check_answer(guss,number):
+    if guss>number:
+        print("too high")
+    elif guss<number:
+        print("too low")
+    else:
+        print("you win")
+def game():
+    print("Welcome to Guessing Game")
+    print("Please enter a number between 1 and 100")
+    level = input("choose level(easy/hard):")
+    if level == "easy":
+        attempts=easy_level
+    else:
+        attempts=hard_level
+    while attempts > 0:
+        print(f"you have {attempts} attempts")
+        guss=int(input("make your guss:"))
+        if guss==number:
+            check_answer(guss,number)
+            return
+        else:
+            attempts=attempts-1
+print("you lose the number was:", number)
+game()
